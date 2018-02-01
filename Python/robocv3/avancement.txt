@@ -1,0 +1,11 @@
+
+- On ne doit plus jouer au jeu en console. À la place, le jeu doit être une application serveur. Il faut également créer les applications clients pour jouer à plusieurs au labyrinthe. Chaque joueur aura son propre robot. Au lieu de le placer à un endroit précis sur la carte, il apparaîtra aléatoirement ;
+- Le jeu multi-joueurs se jouera au tour par tour, chaque robot faisant un seul mouvement par tour. Le joueur pourra toujours demander au robot d'aller trois fois vers l'est, par exemple, mais le jeu ne fera bouger le robot qu'une fois avant de demander le coup de l'autre joueur ;
+- Le jeu doit inclure une série de tests unitaires qui permettront de valider son fonctionnement. Les tests doivent vérifier la constitution d'un labyrinthe standard, la création d'un labyrinthe depuis une chaîne et les fonctionnalités du jeu multi-joueurs ;
+- Les robots peuvent maintenant murer des portes (changer une porte en mur) ou percer une porte dans un mur. Pour ces deux fonctionnalités, il faudra créer deux nouvelles commandes, voir le détail plus bas.
+- La commande m pour murer une porte suivie de la lettre représentant la direction. Par exemple, la commande me demandra au robot de murer la porte qui se trouve juste à côté à l'est. Murer transforme tout simplement une porte en mur, piégant le robot adverse dans la pièce, temporairement du moins ;
+- La commande p pour percer une porte dans un mur. Cette commande est également suivie de la lettre représentant la direction. Par exemple pn crée une porte dans le mur se trouvant juste au nord.
+
+
+
+Deux robots peuvent avoir la même position
